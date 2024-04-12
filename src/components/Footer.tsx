@@ -11,10 +11,10 @@ function Footer(datas:any) {
                         <div>
                             <p>Do the best you can until you know better...</p>
                             <div className='social'>
-                                <a href={data.instagramUrl} target='_blank'><i className='fa-brands fa-linkedin-in'></i></a>
+                                <a href={data.linkedinUrl} target='_blank'><i className='fa-brands fa-linkedin-in'></i></a>
                                 {/* <i className='fa-brands fa-facebook-f'></i> */}
                                 <a href={data.instagramUrl} target='_blank'><i className='fa-brands fa-instagram'></i></a>
-                                <a href={data.instagramUrl} target='_blank'><i className='fa-brands fa-github'></i></a>
+                                <a href={data.gitHubUrl} target='_blank'><i className='fa-brands fa-github'></i></a>
                             </div>
                         </div>
                     </div>
