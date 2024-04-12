@@ -1,19 +1,20 @@
 import './Footer.css';
 
-function Footer() {
+function Footer(datas:any) {
+    let data = datas.data;
     return (
         <>
             <section>
                 <div className='footer'>
                     <div className='links' data-aos="fade" data-aos-duration="1500" data-aos-delay="100">
-                        <h1>Shirole Urmila</h1>
+                        <h1>{data.firstName} {data.lastName}</h1>
                         <div>
                             <p>Do the best you can until you know better...</p>
                             <div className='social'>
-                                <i className='fa-brands fa-linkedin-in'></i>
-                                <i className='fa-brands fa-facebook-f'></i>
-                                <i className='fa-brands fa-instagram'></i>
-                                <i className='fa-brands fa-github'></i>
+                                <a href={data.instagramUrl} target='_blank'><i className='fa-brands fa-linkedin-in'></i></a>
+                                {/* <i className='fa-brands fa-facebook-f'></i> */}
+                                <a href={data.instagramUrl} target='_blank'><i className='fa-brands fa-instagram'></i></a>
+                                <a href={data.instagramUrl} target='_blank'><i className='fa-brands fa-github'></i></a>
                             </div>
                         </div>
                     </div>

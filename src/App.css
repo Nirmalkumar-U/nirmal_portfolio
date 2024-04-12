@@ -28,11 +28,18 @@ button{
 }
 button:hover{
   box-shadow: 0 5px 16px var(--main-color);
-  color:#fff;
+  color:#0f0202;
   transform: translateY(-5px);
 }
 section{
   display:flex;
   justify-content: center;
   align-items: center;
+}
+.tech-name{
+  font-size: 20px;
+  margin: -30px;
+}
+.rotate-icon{
+  transform: rotate(90deg) scale(0.5);
 }

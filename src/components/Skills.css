@@ -4,8 +4,9 @@
     color:#fff;
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
+    text-align: center;
 }
 .skills h2{
     text-align: center;

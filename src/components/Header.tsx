@@ -1,30 +1,30 @@
 import './Header.css';
 import Aos from 'aos';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
-
-
-function Header(){
+function Header(datas:any){
     Aos.init();
+    let data = datas.data;
     return(
         <>
             <section id="home">
                 <div className='hero'>
                     <div className='hero-info'>
-                        <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1000">Hi, I am <span>Shirole Urmila</span></h1>
+                        <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1000">Hi, I am <span>{data.firstName} {data.lastName}</span></h1>
                         <p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1100">Do the best you can until you know better . . .</p>
                         <div className='social-icons'>
-                            <a href="#"><i className='fa-brands fa-instagram' data-aos="fade" data-aos-duration="1500" data-aos-delay="1200"></i></a>
-                            <a href="#"><i className='fa-brands fa-facebook' data-aos="fade" data-aos-duration="1500" data-aos-delay="1300"></i></a>
-                            <a href="https://www.linkedin.com/in/urmila-shirole-41b1b72b8/" target='_blank'><i className='fa-brands fa-linkedin' data-aos="fade" data-aos-duration="1500" data-aos-delay="1400"></i></a>
-                            <a href="https://github.com/urmilashirole" target='_blank'><i className='fa-brands fa-github' data-aos="fade" data-aos-duration="1500" data-aos-delay="1500"></i></a>
+                            <a href={data.instagramUrl} target='_blank'><i className='fa-brands fa-instagram' data-aos="fade" data-aos-duration="1500" data-aos-delay="1200"></i></a>
+                            {/* <a href="#"><i className='fa-brands fa-facebook' data-aos="fade" data-aos-duration="1500" data-aos-delay="1300"></i></a> */}
+                            <a href={data.linkedinUrl} target='_blank'><i className='fa-brands fa-linkedin' data-aos="fade" data-aos-duration="1500" data-aos-delay="1400"></i></a>
+                            <a href={data.gitHubUrl} target='_blank'><i className='fa-brands fa-github' data-aos="fade" data-aos-duration="1500" data-aos-delay="1500"></i></a>
                         </div>
                         <div className='hero-btns'>
-                            <a href="#skills"><button data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1600">Hire me</button></a>
+                            <a href="#skills"><button data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1600">My Skills</button></a>
                             <a href="#contact"><button data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1700">Contact me</button></a>
                         </div>
                     </div>
                     <div className='hero-img' data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1800">
-                        <img src="https://www.wbw.org/wp-content/uploads/2016/03/Female-Avatar.png" alt="hero-img"/>
+                        <img src="https://media.licdn.com/dms/image/D5603AQEHyNj4AdcwwA/profile-displayphoto-shrink_200_200/0/1688196948298?e=2147483647&amp;v=beta&amp;t=4yI-1B0Oc5z6rkuTuUmz4IXdYkRoDYXTXlc2wprYRh0" alt="hero-img"/>
                     </div>
                 </div>
             </section>
