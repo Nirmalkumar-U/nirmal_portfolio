@@ -1,0 +1,39 @@
+.about{
+    width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 80px 8%;
+    color:#fff;
+}
+.about-info{
+    width: 100%;
+}
+.about-info h3{
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 400;
+}
+.about-info h3 span{
+    border-bottom: 2px solid var(--main-color);
+}
+.about-info h2{
+    font-size: 40px;
+    font-weight: 400;
+    color:var(--main-color);
+}
+.about-info button{
+    margin:25px 0;
+}
+
+@media (max-width:950px){
+    .about{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .about-info{
+        width: 100%;
+    }
+}

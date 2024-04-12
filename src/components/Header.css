@@ -1,0 +1,106 @@
+.hero{
+    width: 1500px;
+    padding: 80px 8%;
+    padding-top: 120px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-btns{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.hero-info{
+    width: 55%;
+}
+.hero-info h1{
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+}
+.hero-info h1 span{
+    color:var(--main-color);
+    filter:drop-shadow(0 0 10px var(--main-color));
+    position: relative;
+}
+.hero-info p{
+    font-size:25px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.social-icons{
+    margin-bottom: 30px;
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+.social-icons i{
+    height: 50px;
+    width: 50px;
+    font-size: 28px;
+    border-radius: 50%;
+    border:1px solid var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
+    color:var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .6s;
+}
+.social-icons i:hover{
+    box-shadow: 0 5px 16px var(--main-color);
+    color:#fff;
+    transform: translateY(-5px);
+    background-color: var(--main-color);
+}
+.hero-img{
+    width:50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-radius: 50%;
+    transition:.6s;
+}
+.hero-img img{
+    background-color:#6262ff;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: .6s;
+    border:1px solid var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
+}
+.hero-img img:hover{
+    box-shadow: 0 0 80px var(--main-color);
+    transform: translateY(-15px);
+}
+
+@media (max-width:950px){
+    .hero{
+        flex-direction: column;
+    }
+    .hero-info{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .hero-img{
+        width:100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-img img{
+        width: 500px;
+        height:500px;
+    }
+}
+ 
+@media (max-width:550px){
+    .hero-img img{
+        width: 90vw;
+        height: 90vw;
+    }
+    
+}
