@@ -1,8 +1,8 @@
-import './Services.css';
+import './Education.css';
 import Aos from 'aos';
 
 
-function Services(datas:any){
+function Education(datas:any){
     Aos.init();
     let data = datas.data
     return(
@@ -26,4 +26,4 @@ function Services(datas:any){
         </>
     )
 }
-export default Services;
+export default Education;

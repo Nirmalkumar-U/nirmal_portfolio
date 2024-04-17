@@ -3,12 +3,12 @@ import Nav from './components/Nav'
 import Header from './components/Header'
 import About from './components/About'
 import Skills from './components/Skills'
-import Services from './components/Services'
 import Project from './components/Project'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Experiance from './components/Experiance'
+import Education from './components/Education'
 
 function App() {
   const data = {
@@ -19,11 +19,11 @@ function App() {
     "address":"Coimbatore, Tamil Nadu",
     "aboutMe":"I am very enthusiastic about new tech development. A Self Learning with some vision and I'm an excellent collaborator and I challenge myself to enhance my professional skills, capabilities and I manage to work well under pressure and possess excellent time-keeping skills.",
     "resumeUrl":"",
-    "designation":"Full Stack DotNet Developer",
+    "designation":"Full Stack Developer",
     "gitHubUrl":"https://github.com/Nirmalkumar-U/",
     "linkedinUrl":"https://in.linkedin.com/in/nirmalkumar-uthamaraj-ab070a212",
     "instagramUrl":"https://www.instagram.com/nimu_unk__/?igsh=MXE5ZGFnZng4Yzc2OQ%3D%3D",
-    "imgUrl":"https://media.licdn.com/dms/image/D5603AQEHyNj4AdcwwA/profile-displayphoto-shrink_200_200/0/1688196948298?e=2147483647&amp;v=beta&amp;t=4yI-1B0Oc5z6rkuTuUmz4IXdYkRoDYXTXlc2wprYRh0",
+    "imgUrl":"./src/assets/nirmal_pic.jpg",
     "skills":{
       "angular":{
         "name":"Angular 15",
@@ -100,13 +100,14 @@ function App() {
     "project":[
       {
         "name":"HMID",
-        "description":"Hmid is project",
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsPtL6zMy8b-Ee7tGhjCdKX7U04vdpRllESobZ3j0MYQ&s"
+        "description":"HMID project is used to track inventory and movement of chemical, materials and its waste for Federal corporation.",
+        "img":"./src/assets/hmids_logo.png"
       },
       {
         "name":"Smart Tools",
-        "description":"EPA is project",
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsPtL6zMy8b-Ee7tGhjCdKX7U04vdpRllESobZ3j0MYQ&s"
+        "description":"Smart tools is used for During an inspection, inspectors typically review documents, records, and procedures, conduct interviews with personnel, and provide feedback. this tool capture all the data and provide the report. It works on both online and offline.",
+        "img" : "./src/assets/smarttools.png"
+
       }
     ],
     "contact":{
@@ -117,20 +118,31 @@ function App() {
     "experiences":[
       {
         "position":"Full Stack Developer",
-        "company":"Byteforza",
-        "mainSkill":"Angular DotNet Core",
-        "fullSkill":"Angular DotNet Core",
-        "projectName":"HMID",
-        "period":"2022-2023"
+        "company":"Byteforza Technology",
+        "mainSkill":"Angular 14 and DotNet Core 5",
+        "fullSkill":"Angular14, Bootstrap, DotNet Core 5, DotNet Entity Framework, ADO.Net, Sql Server",
+        "projectName":"Smart Tools",
+        "period":"Aug/2022-Jan/2023",
+        "resposibility":[
+          "res",
+          "wdcwf",
+          "wfc",
+          "vre"
+        ]
       },
       {
         "position":"Full Stack Developer",
-        "company":"Byteforza",
-        "mainSkill":"Angular DotNet Core",
-        "fullSkill":"Angular DotNet Core",
-        "projectName":"Smart Tools",
-        "period":"2022-2023"
-      }
+        "company":"Byteforza Technology",
+        "mainSkill":"Angular 14 and DotNet Core 6",
+        "fullSkill":"Angular14, Bootstrap, DotNet Core 6, DotNet Entity Framework, LINQ, Power Bi, RDL/RDLC reporting, Sql Server",
+        "projectName":"HMID",
+        "period":"Feb/2023-Present",
+        "resposibility":[
+          "res",
+          "wdcwf",
+          "wfc"
+        ]
+      }      
     ]
   }
   return (
@@ -139,11 +151,11 @@ function App() {
           <Header data={data} />
           <About data={data} />
           <Skills data={data} />
-          <Services data={data} />
           <Project data={data} />
+          <Experiance data={data} />
+          <Education data={data} />
           <Contact data={data} />
           <Footer data={data} />
-          <Experiance data={data} />
       </>
   )
 }

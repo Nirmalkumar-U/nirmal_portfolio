@@ -45,7 +45,7 @@ section{
 }
 /* experience */
 #resume {
-	background: #efe1bd;
+  background-color: rgb(20, 19, 19);
   display: block !important;
 }
 
@@ -60,7 +60,7 @@ section{
 }
 
 .experience-icon {
-	font-size: 300%;
+	font-size: 240%;
 	margin-top: 25%;
 	text-align: center;
 }
@@ -96,4 +96,5 @@ section{
 .vertical-timeline-element-date {
 	padding: 0 !important;
 	margin: 0 !important;
+	color: white;
 }

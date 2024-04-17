@@ -24,7 +24,7 @@ function Header(datas:any){
                         </div>
                     </div>
                     <div className='hero-img' data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1800">
-                        <img src="https://media.licdn.com/dms/image/D5603AQEHyNj4AdcwwA/profile-displayphoto-shrink_200_200/0/1688196948298?e=2147483647&amp;v=beta&amp;t=4yI-1B0Oc5z6rkuTuUmz4IXdYkRoDYXTXlc2wprYRh0" alt="hero-img"/>
+                        <img src={data.imgUrl} alt="hero-img"/>
                     </div>
                 </div>
             </section>

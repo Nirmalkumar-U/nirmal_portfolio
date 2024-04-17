@@ -1,5 +1,4 @@
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
-
 import "./timelineExperience.css"
 import Badge from "react-bootstrap/Badge";
 
@@ -11,14 +10,9 @@ let work = data.experiences.map((experience:any, index:any) => (
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date={experience.period}
-    iconStyle={{
-      background: "#AE944F",
-      color: "#fff",
-      textAlign: "center",
-    }}
+    iconStyle={{background: "#AE944F",color: "#fff",textAlign: "center",}}
     icon={<i className="fab fa-angular experience-icon"></i>}
-    key={index}
-  >
+    key={index}>
     <div style={{ textAlign: "left", marginBottom: "4px" }}>
       <Badge pill className="main-badge mr-2 mb-2" key={index}>
         {experience.mainSkill}
@@ -30,6 +24,11 @@ let work = data.experiences.map((experience:any, index:any) => (
     <h4 className="vertical-timeline-element-subtitle" style={{ textAlign: "left" }}>
       {experience.company}
     </h4>
+    <ul className="vertical-timeline-element-subtitle" style={{ textAlign: "left"}}>
+      {experience.resposibility.map((responsibility:any, index:any) => (
+        <li key={index} style={{ listStyle: "inside" }}>{responsibility}</li>
+      ))}
+    </ul>
     <div style={{ textAlign: "left", marginTop: "15px" }}>
       <Badge pill className="main-badge mr-2 mb-2" key={index}>
         {experience.fullSkill}
