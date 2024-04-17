@@ -6,35 +6,38 @@ import Badge from "react-bootstrap/Badge";
 
 function Experiance(datas:any) {
     let data = datas.data;
-    let work = <VerticalTimelineElement
+    
+let work = data.experiences.map((experience:any, index:any) => (
+  <VerticalTimelineElement
     className="vertical-timeline-element--work"
-    date="2"
+    date={experience.period}
     iconStyle={{
       background: "#AE944F",
       color: "#fff",
       textAlign: "center",
     }}
     icon={<i className="fab fa-angular experience-icon"></i>}
-    key="1"
+    key={index}
   >
     <div style={{ textAlign: "left", marginBottom: "4px" }}>
-        <Badge pill className="main-badge mr-2 mb-2" key="1">
-            badge 1
-        </Badge>
+      <Badge pill className="main-badge mr-2 mb-2" key={index}>
+        {experience.mainSkill}
+      </Badge>
     </div>
     <h3 className="vertical-timeline-element-title" style={{ textAlign: "left" }}>
-      HMID
+      {experience.projectName}
     </h3>
     <h4 className="vertical-timeline-element-subtitle" style={{ textAlign: "left" }}>
-      ByteForza
+      {experience.company}
     </h4>
     <div style={{ textAlign: "left", marginTop: "15px" }}>
-        <Badge pill className="main-badge mr-2 mb-2" key="1">
-        badge 2
-        </Badge>
+      <Badge pill className="main-badge mr-2 mb-2" key={index}>
+        {experience.fullSkill}
+      </Badge>
     </div>
   </VerticalTimelineElement>
-    console.log(data);
+));
+
   return (
     <div className="row">
         <section id="resume" className="pb-5">

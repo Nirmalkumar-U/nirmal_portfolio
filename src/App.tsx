@@ -113,7 +113,25 @@ function App() {
       "email":"unirmalkumar3@gmail.com",
       "phone":8778359970,
       "address":"Coimbatore, Tamil Nadu"
-    }
+    },
+    "experiences":[
+      {
+        "position":"Full Stack Developer",
+        "company":"Byteforza",
+        "mainSkill":"Angular DotNet Core",
+        "fullSkill":"Angular DotNet Core",
+        "projectName":"HMID",
+        "period":"2022-2023"
+      },
+      {
+        "position":"Full Stack Developer",
+        "company":"Byteforza",
+        "mainSkill":"Angular DotNet Core",
+        "fullSkill":"Angular DotNet Core",
+        "projectName":"Smart Tools",
+        "period":"2022-2023"
+      }
+    ]
   }
   return (
       <>
