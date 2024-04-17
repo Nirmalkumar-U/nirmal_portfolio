@@ -8,6 +8,7 @@ import Project from './components/Project'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Experiance from './components/Experiance'
 
 function App() {
   const data = {
@@ -95,7 +96,24 @@ function App() {
         "CGP":"75%",
         "css":"fa-solid fa-user-graduate"
       }
-    ]
+    ],
+    "project":[
+      {
+        "name":"HMID",
+        "description":"Hmid is project",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsPtL6zMy8b-Ee7tGhjCdKX7U04vdpRllESobZ3j0MYQ&s"
+      },
+      {
+        "name":"Smart Tools",
+        "description":"EPA is project",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsPtL6zMy8b-Ee7tGhjCdKX7U04vdpRllESobZ3j0MYQ&s"
+      }
+    ],
+    "contact":{
+      "email":"unirmalkumar3@gmail.com",
+      "phone":8778359970,
+      "address":"Coimbatore, Tamil Nadu"
+    }
   }
   return (
       <>
@@ -104,9 +122,10 @@ function App() {
           <About data={data} />
           <Skills data={data} />
           <Services data={data} />
-          <Project />
-          <Contact />
+          <Project data={data} />
+          <Contact data={data} />
           <Footer data={data} />
+          <Experiance data={data} />
       </>
   )
 }
