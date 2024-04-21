@@ -24,7 +24,7 @@ function Header(datas:any){
                         </div>
                     </div>
                     <div className='hero-img' data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1800">
-                        <img src={data.imgUrl} alt="hero-img"/>
+                        <img src="/src/assets/nirmal_pic.jpg" alt="hero-img"/>
                     </div>
                 </div>
             </section>
