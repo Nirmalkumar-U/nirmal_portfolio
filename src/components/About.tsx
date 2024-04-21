@@ -15,7 +15,7 @@ function About(datas:any) {
                         <h3 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="800">Hi, I am <span>{data.designation}</span></h3>
                         <p data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1000">{data.aboutMe}</p><br></br>
                         {/* <p data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1100">I'm also a strong believer in the importance of accessibility and usability. I always strive to create web applications that are accessible to everyone, regardless of their device or ability.</p> */}
-                        <a href={data.resumeUrl} target="_blank"><button data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1200">Download CV</button></a>
+                        <a href="./Nirmalkumar-Resume.pdf" target="_blank"><button data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1200">Download CV</button></a>
                     </div>
                 </div>
             </section>

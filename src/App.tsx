@@ -124,10 +124,9 @@ function App() {
         "projectName":"Smart Tools",
         "period":"Aug/2022-Jan/2023",
         "resposibility":[
-          "res",
-          "wdcwf",
-          "wfc",
-          "vre"
+          "This project partially worked on online and offline these functionalities are implemented.",
+          "Code review, impact analysis, on-time delivery, collaborative teamwork.",
+          "Used Agile methodology—a collaborative project management approach emphasizing iterative development and continuous improvement."
         ]
       },
       {
@@ -138,9 +137,11 @@ function App() {
         "projectName":"HMID",
         "period":"Feb/2023-Present",
         "resposibility":[
-          "res",
-          "wdcwf",
-          "wfc"
+          "Redesigned the project from Knockout.js with .Net MVC to Angular 14 with .Net Core 6.",
+          "Implemented complex screens efficiently for bug-free sprint releases and production releases.",
+          "Conducted code reviews, provided peer support, and implemented reusable code.",
+          "Utilized Entity Framework in Microservices for enhanced functionality.",
+          "Used Agile methodology—a collaborative project management approach emphasizing iterative development and continuous improvement."
         ]
       }      
     ]
