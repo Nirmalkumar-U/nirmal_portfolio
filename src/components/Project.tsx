@@ -13,14 +13,14 @@ function Project(datas:any){
                     <div className='project-cards'>
                         {/* {data.project.map((project: any, i: any) => ( */}
                             <div className='project-card' data-aos="fade-left" data-aos-duration="1500" data-aos-delay="2500">
-                                <img src="/src/assets/smarttools.png" height={300} width={500}  alt="project-img" />
+                                <img src="/public/smarttools.png" height={300} width={500}  alt="project-img" />
                                 <div>
                                     <h4>{data.project[0].name}</h4>
                                     <p>{data.project[0].description}</p>
                                 </div>
                             </div>
                             <div className='project-card' data-aos="fade-left" data-aos-duration="1500" data-aos-delay="2500">
-                                <img src="/src/assets/hmids_logo.png" height={300} width={500}  alt="project-img" />
+                                <img src="/public/hmids_logo.png" height={300} width={500}  alt="project-img" />
                                 <div>
                                     <h4>{data.project[1].name}</h4>
                                     <p>{data.project[1].description}</p>
